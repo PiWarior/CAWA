@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Voitures</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Recherche de Voitures</h1>
+        
+        <div class="search-form">
+            <div class="form-group">
+                <label for="marque">Marque</label>
+                <input type="text" id="marque" name="marque" placeholder="Ex: BMW">
+            </div>
+            
+            <div class="form-group">
+                <label for="annee">Année</label>
+                <input type="text" id="annee" name="annee" placeholder="Ex: 2020">
+            </div>
+            
+            <div class="form-group">
+                <label for="modele">Modèle</label>
+                <input type="text" id="modele" name="modele" placeholder="Ex: Corolla">
+            </div>
+            
+            <div class="form-group">
+                <label for="body_style">Style de carrosserie</label>
+                <input type="text" id="body_style" name="body_style" placeholder="Ex: Berline">
+            </div>
+            
+            <button type="button" id="search-btn" class="search-btn">Rechercher</button>
+
+            <h3>Ajouter une voiture</h3>
+            <div class="form-group">
+                <input type="text" id="new-marque" placeholder="Marque">
+                <input type="text" id="new-modele" placeholder="Modèle">
+                <input type="text" id="new-annee" placeholder="Année">
+                <input type="text" id="new-style" placeholder="Style">
+                <button id="add-car-btn">Ajouter</button>
+            </div>
+
+
+        </div>
+        
+        <div class="results">
+            <div class="result-header">
+                <h2>Résultats</h2>
+                <span class="result-count" id="result-count">0 voitures trouvées</span>
+            </div>
+            
+            <div id="cars-container" class="cars-grid">
+                <!-- Les résultats de la recherche seront affichés ici -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal pour afficher la description -->
+    <div id="description-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title">Description de la voiture</h2>
+            </div>
+            <div id="modal-loading" class="loading">
+                <div class="spinner"></div> En cours...
+            </div>
+            <div id="modal-content" style="display: none;">
+                <div class="car-details" id="car-details">
+                    <!-- Détails de la voiture -->
+                </div>
+                <div class="car-description" id="car-description">
+                    <!-- Description générée -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
+<spline-viewer url="https://prod.spline.design/XGuM-HRKgcfEGagL/scene.splinecode"
+               style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;">
+</spline-viewer>
+
+
+</html>

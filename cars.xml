@@ -1,0 +1,98 @@
+<cars>
+   <car id="1">
+    <year>1992</year>
+    <make>Acura</make>
+    <model>Integra</model>
+    <body_styles>["Sedan", "Hatchback"]</body_styles>
+    </car>
+  <car id="2">
+    <year>1992</year>
+    <make>Acura</make>
+    <model>Legend</model>
+    <body_styles>["Sedan", "Coupe"]</body_styles>
+    </car>
+  <car id="3">
+    <year>1992</year>
+    <make>Acura</make>
+    <model>NSX</model>
+    <body_styles>["Coupe"]</body_styles>
+    </car>
+  <car id="4">
+    <year>1992</year>
+    <make>Acura</make>
+    <model>Vigor</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="5">
+    <year>1992</year>
+    <make>Alfa Romeo</make>
+    <model>164</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="6">
+    <year>1992</year>
+    <make>Alfa Romeo</make>
+    <model>Spider</model>
+    <body_styles>["Convertible"]</body_styles>
+    </car>
+  <car id="7">
+    <year>1992</year>
+    <make>Audi</make>
+    <model>100</model>
+    <body_styles>["Sedan", "Wagon"]</body_styles>
+    </car>
+  <car id="8">
+    <year>1992</year>
+    <make>Audi</make>
+    <model>80</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="9">
+    <year>1992</year>
+    <make>Audi</make>
+    <model>Quattro</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="10">
+    <year>1992</year>
+    <make>Audi</make>
+    <model>S4</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="11">
+    <year>1992</year>
+    <make>BMW</make>
+    <model>3 Series</model>
+    <body_styles>["Coupe", "Convertible", "Sedan"]</body_styles>
+    </car>
+  <car id="12">
+    <year>1992</year>
+    <make>BMW</make>
+    <model>5 Series</model>
+    <body_styles>["Sedan", "Wagon"]</body_styles>
+    </car>
+  <car id="13">
+    <year>1992</year>
+    <make>BMW</make>
+    <model>7 Series</model>
+    <body_styles>["Sedan"]</body_styles>
+    </car>
+  <car id="14">
+    <year>1992</year>
+    <make>BMW</make>
+    <model>8 Series</model>
+    <body_styles>["Coupe"]</body_styles>
+    </car>
+  <car id="15">
+    <year>1992</year>
+    <make>BMW</make>
+    <model>M5</model>
+    <body_styles>["Sedan"]</body_styles>
+  </car>
+  <car id="16">
+    <year>2000</year>
+    <make>Toyota</make>
+    <model>Corolla</model>
+    <body_styles>["Sedan", "Wagon"]</body_styles>
+  </car>
+  </cars>
